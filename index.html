@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 50px;
+            font-size: 1rem;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #4a4a6a;
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .tool-card:hover {
+            border-color: #00d4ff;
+            background: rgba(0, 212, 255, 0.08);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .tool-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .tool-desc {
+            font-size: 0.9rem;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #555;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Tools</h1>
+        <p class="subtitle">ブラウザで使える便利ツール集</p>
+
+        <div class="tools-grid">
+            <a href="mosaic.html" class="tool-card">
+                <div class="tool-icon">🔲</div>
+                <div class="tool-name">Image Mosaic</div>
+                <div class="tool-desc">画像にモザイクをかけるツール。強度調整可能。</div>
+            </a>
+
+<!-- 新しいツールはここに追加 -->
+            <!--
+            <a href="newtool.html" class="tool-card">
+                <div class="tool-icon">🔧</div>
+                <div class="tool-name">New Tool</div>
+                <div class="tool-desc">ツールの説明文</div>
+            </a>
+            -->
+        </div>
+
+        <footer>
+            Powered by Browser APIs
+        </footer>
+    </div>
+</body>
+</html>
